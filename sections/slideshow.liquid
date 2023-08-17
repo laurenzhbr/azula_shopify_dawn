@@ -153,7 +153,7 @@
                   </p>
                 {%- endunless -%}
                 {%- if block.settings.button_label != blank and block.settings.button_link != blank -%}
-                  <a href="{{ block.settings.button_link }}" style="color: {{ block.settings.slide_button_label_color }}; background-color: {{ block.settings.slide_button_background_color }}" class="btn hero__cta">
+                  <a href="{{ block.settings.button_link }}" style="font-size: 17px; color: {{ block.settings.slide_button_label_color }}; background-color: {{ block.settings.slide_button_background_color }}" class="btn hero__cta">
                     {{ block.settings.button_label | escape }}
                   </a>
                 {%- endif -%}
