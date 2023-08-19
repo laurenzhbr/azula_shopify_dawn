@@ -2455,7 +2455,7 @@ a:hover {
 .site-nav--has-dropdown > a.nav-focus:before, .site-nav--has-dropdown.nav-hover > a:before {
   content: "";
   position: absolute;
-  left: 10px;
+  left: 15px;
   right: 30px;
   bottom: 0;
   display: block;
