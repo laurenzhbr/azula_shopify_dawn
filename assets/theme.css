@@ -2438,9 +2438,6 @@ a:hover {
   text-transform: uppercase;
   transition: color 0.2s;
   font-size: 1em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
 }
 
 .site-nav--has-dropdown > a {
