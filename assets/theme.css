@@ -2429,6 +2429,9 @@ a:hover {
 
 .site-nav__item {
   white-space: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 .site-nav__link {
