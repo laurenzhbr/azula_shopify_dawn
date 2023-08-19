@@ -2429,6 +2429,9 @@ a:hover {
 
 .site-nav__item {
   white-space: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .site-nav__link {
