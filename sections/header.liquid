@@ -277,7 +277,16 @@
                 {% if shop.customer_accounts_enabled %}
                   <li class="site-nav__item site-nav__expanded-item site-nav__item">
                     <a class="site-nav__link site-nav__link--icon" href="{{ routes.account_url }}">
-                      <img src="{{ "profile_icon2.svg" | asset_url }}" width=20px height=20px loading=lazy>
+                      <span class="icon-fallback-text">
+                        <img src="{{ "profile_icon2.svg" | asset_url }}" width=20px height=20px loading=lazy>
+                        <span class="fallback-text">
+                          {% if customer %}
+                            {{ 'layout.customer.account' | t }}
+                          {% else %}
+                            {{ 'layout.customer.log_in' | t }}
+                          {% endif %}
+                        </span>
+                      </span>
                     </a>
                   </li>
                 {% endif %}
