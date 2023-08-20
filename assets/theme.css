@@ -2348,6 +2348,7 @@ a:hover {
 .site-nav--open {
   white-space: nowrap;
   opacity: 0;
+  display: flex;
 }
 .no-js .site-nav, .site-nav.site-nav--init,
 .no-js .site-nav--open,
