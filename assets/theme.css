@@ -2474,7 +2474,6 @@ a:hover {
   padding: 10px 0;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.09);
   transform: translate3d(0px, -12px, 0px);
-  opacity: 0;
 }
 .supports-no-touch .site-nav--has-dropdown:hover .site-nav__dropdown, .site-nav--has-dropdown.nav-hover .site-nav__dropdown, .nav-focus + .site-nav__dropdown {
   opacity: 1;
