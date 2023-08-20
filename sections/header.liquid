@@ -305,7 +305,7 @@
 
                 <li class="site-nav__item site-nav__item">
                   <a href="{{ routes.cart_url }}" class="site-nav__link site-nav__link--icon cart-link js-drawer-open-button-right" aria-controls="CartDrawer">
-                    <img src="{{ "bag_icon2.svg" | asset_url }}" width=20px height=20px loading=lazy>
+                    <img src="{{ "bag_icon2.svg" | asset_url }}" width=auto height=20px loading=lazy>
                     <span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}"></span>
                   </a>
                 </li>
