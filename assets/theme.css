@@ -2349,7 +2349,7 @@ a:hover {
   white-space: nowrap;
   opacity: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 .no-js .site-nav, .site-nav.site-nav--init,
