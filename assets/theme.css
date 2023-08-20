@@ -2429,6 +2429,7 @@ a:hover {
 
 .site-nav__item {
   white-space: normal;
+  padding: 15px 13px;
 }
 
 .site-nav__link {
