@@ -2516,7 +2516,7 @@ a:hover {
 .site-nav__dropdown-link {
   display: block;
   white-space: nowrap;
-  padding: 5px 15px;
+  padding: 5px 10px;
   font-size: 1.1428571429em;
 }
 .site-nav--has-grandchildren .site-nav__dropdown-link {
