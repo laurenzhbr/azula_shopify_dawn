@@ -2351,7 +2351,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  align-content: right;
+  justify-content: flex-end;
 }
 .no-js .site-nav, .site-nav.site-nav--init,
 .no-js .site-nav--open,
