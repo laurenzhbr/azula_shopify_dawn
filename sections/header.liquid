@@ -296,7 +296,7 @@
                   {% if section.settings.search == 'page' %}
                     {% assign search_modal = false %}
                   {% endif %}
-                  <li class="site-nav__item site-nav__item">
+                  <li class="site-nav__item site-nav__item--compressed">
                     <a href="{{ routes.search_url }}" class="site-nav__link site-nav__link--icon{% if search_modal %} js-toggle-search-modal{% endif %}" data-mfp-src="#SearchModal" width=20px height=20px>
                       <img src="{{ "search_icon2.svg" | asset_url }}" width=20px height=20px loading=lazy>
                     </a>
