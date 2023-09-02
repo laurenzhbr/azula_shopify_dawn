@@ -1935,7 +1935,7 @@ a:hover {
 .hero__slide a.hero__cta,
 .hero--adapt a.hero__cta {
   margin-bottom: 0;
-  border: 1px solid white;
+  border: 2px solid white;
   padding: 5px;
 }
 
