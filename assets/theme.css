@@ -1936,6 +1936,7 @@ a:hover {
 .hero--adapt a.hero__cta {
   margin-bottom: 0;
   border: 2px solid white;
+  padding: 10px;
 }
 
 /*================ Font sizes ================*/
