@@ -2848,7 +2848,7 @@ button.mfp-arrow:active {
 .grid-product__meta {
   position: relative;
   display: block;
-  padding: 0 0 0 13px;
+  padding: 0 0 13px 0;
 }
 
 .grid-product__price-wrap {
