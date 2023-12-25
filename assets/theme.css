@@ -3746,26 +3746,15 @@ button.mfp-arrow:active {
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-  .password-page__wrapper {
-    display: table;
-    height: 100%;
-    width: 100%;
-    background-image: url("shop_empfang_thin.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-@media screen and (min-width: 769px) {
-  .password-page__wrapper {
-    display: table;
-    height: 100%;
-    width: 100%;
-    background-image: url("shop_empfang_wide.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+.password-page__wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+  background-image: url("shop_empfang.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
 }
 
 .password-page__wrapper h1, .password-page__wrapper .h1,
