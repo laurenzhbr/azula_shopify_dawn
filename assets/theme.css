@@ -3892,6 +3892,7 @@ button.mfp-arrow:active {
 .password-login,
 .admin-login {
   margin-top: 15px;
+  text-align: center;
 }
 .password-login a:hover,
 .admin-login a:hover {
