@@ -244,13 +244,13 @@
       "password-content": {
         "type": "password-content",
         "settings": {
-          "title": "SETTING UP SOME NEW STUFF",
-          "newsletter_enable": true,
+          "title": "",
+          "newsletter_enable": false,
           "newsletter_form_heading": "",
           "newsletter_form_subheading": "<p><strong>We are back very soon...!<\/strong><\/p>",
           "newsletter_placeholder": "E-Mail-Adresse",
           "newsletter_button_text": "eingabe",
-          "show_share_buttons": true,
+          "show_share_buttons": false,
           "social_message": "Weitersagen"
         }
       },
