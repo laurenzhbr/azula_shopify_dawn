@@ -3745,16 +3745,17 @@ button.mfp-arrow:active {
   height: 100vh;
   text-align: center;
 }
-
-.password-page__wrapper {
-  display: table;
-  height: 100%;
-  width: 100%;
-  background-image: url("shop_empfang.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #ffffff;
+@media screen and (min-width: 768px) {
+  .password-page__wrapper {
+    display: table;
+    height: 100%;
+    width: 100%;
+    background-image: url("shop_empfang_wide.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
+
 .password-page__wrapper h1, .password-page__wrapper .h1,
 .password-page__wrapper h2,
 .password-page__wrapper .h2,
