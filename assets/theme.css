@@ -3891,9 +3891,15 @@ button.mfp-arrow:active {
   margin-bottom: 0;
 }
 
-.password-login,
-.admin-login {
-  margin-top: 5%;
+@media screen and (max-width: 768px){
+  .password-login, .admin-login {
+    margin-top: 30%;
+  }
+}
+@media screen and (min-width: 769px){
+  .password-login, .admin-login {
+    margin-top: 5%;
+  }
 }
 .password-login a:hover,
 .admin-login a:hover {
