@@ -3751,7 +3751,7 @@ button.mfp-arrow:active {
   height: 100%;
   width: 100%;
   background-image: url("shop_empfang.png");
-  background-size: auto;
+  background-size: contain;
   background-repeat: no-repeat;
   color: #ffffff;
 }
