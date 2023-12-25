@@ -3745,7 +3745,18 @@ button.mfp-arrow:active {
   height: 100vh;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (max-width: 768px) {
+  .password-page__wrapper {
+    display: table;
+    height: 100%;
+    width: 100%;
+    background-image: url("shop_empfang_thin.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 769px) {
   .password-page__wrapper {
     display: table;
     height: 100%;
