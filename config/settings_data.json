@@ -71,7 +71,7 @@
             "type": "slide",
             "settings": {
               "image": "shopify:\/\/shop_images\/shop_welcome_2.jpg",
-              "image_mobile": "shopify:\/\/shop_images\/DSC00616-2.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/shop_welcome_mobile.jpg",
               "image_position": "center center",
               "image_overlay": true,
               "image_overlay_opacity": 6,
