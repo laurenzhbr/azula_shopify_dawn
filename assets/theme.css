@@ -3754,6 +3754,7 @@ button.mfp-arrow:active {
     background-image: url("shop_empfang_thin.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
 @media screen and (min-width: 769px) {
