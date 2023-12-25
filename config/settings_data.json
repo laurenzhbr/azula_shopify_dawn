@@ -237,6 +237,7 @@
       "password-header": {
         "type": "password-header",
         "settings": {
+          "logo": "shopify:\/\/shop_images\/as_initialis_square_white.png",
           "logo_max_width": "50"
         }
       },
