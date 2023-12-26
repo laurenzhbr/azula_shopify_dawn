@@ -96,8 +96,10 @@
         <span class="grid-product__price">
           {% if on_sale %}
             {% render 'product-price', variant: current_variant %}
+            {% comment %}
             <span>{{ 'products.general.regular_price' | t }}</span>
             <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
+            {% endcomment %}
           {% else %}
             <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
           {% endif %}
