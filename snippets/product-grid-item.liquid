@@ -95,6 +95,7 @@
       <span class="grid-product__price-wrap">
         <span class="grid-product__price">
           {% if on_sale %}
+            <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
             <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
           {% else %}
             <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
