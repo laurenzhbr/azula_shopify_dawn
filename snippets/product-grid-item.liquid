@@ -95,7 +95,13 @@
       <span class="grid-product__price-wrap">
         <span class="grid-product__price">
           {% if on_sale %}
-            {% render 'product-price', variant: current_variant %}
+            <span id="PriceA11y" class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
+            <span class="product-single__price--wrapper" aria-hidden="false">
+              <span id="ComparePrice" class="product-single__price--compare-at">
+                {{ variant.compare_at_price | money }}
+              </span>
+            </span>
+            <span id="ComparePriceA11y" class="visually-hidden" aria-hidden="false">{{ 'products.general.sale_price' | t }}</span>
             {% comment %}
             <span>{{ 'products.general.regular_price' | t }}</span>
             <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
