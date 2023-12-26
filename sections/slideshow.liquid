@@ -31,6 +31,7 @@
 
 <div id="HeroWrapper-{{ section.id }}"{% if section.settings.home_hero_height == 'adapt' %} class="hero--adapt"{% endif %} data-section-id="{{ section.id }}" data-section-type="slideshow-section">
   {%- if section.blocks.size > 0 -%}
+    <a href="{{ block.settings.button_link }}">
     <div class="hero-{{ section.id }} hero"
          id="Hero-{{ section.id }}"
          aria-label="slideshow"
@@ -92,7 +93,6 @@
             }
           {%- endstyle -%}
         {%- endif -%}
-        <a href="{{ block.settings.button_link }}">
         <div class="hero__slide slide--{{ block.id }}{% if block.settings.image == blank %} slide--placeholder{% endif %}"
               data-hero-slide
               {{ block.shopify_attributes }}>
@@ -164,7 +164,6 @@
             </div>
           </div>
         </div>
-        </a>
       {%- endfor -%}
 
       {%- if section.blocks.size > 1 -%}
@@ -191,6 +190,7 @@
         </div>
       {%- endif -%}
     </div>
+    </a>
     {%- if section.settings.home_hero_height == 'adapt' -%}
       <div class="hero__adapt-text-wrap wrapper" data-hero-adapt-text-wrap>
         {%- for block in section.blocks -%}
