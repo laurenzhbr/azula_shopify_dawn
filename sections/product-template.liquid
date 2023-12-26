@@ -135,7 +135,7 @@
             {% comment %}
               Optionally show the 'compare at' or original price of the product.
             {% endcomment %}
-            {% include 'product-price', variant: current_variant %}
+            {% render 'product-price', variant: current_variant %}
 
             {% comment %}
             {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
