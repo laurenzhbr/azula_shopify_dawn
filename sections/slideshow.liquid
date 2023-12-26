@@ -103,14 +103,14 @@
           {%- else -%}
             <noscript>
               {%- if forloop.first == true -%}
-                <div class="hero__image-no-js"{% if block.settings.image %} style="background-image: url('{{ block.settings.image | img_url: '2048x' }}');"{% endif %}></div>
+                <div class="hero__image-no-js"{% if block.settings.image %} style="background-image: url('{{ block.settings.image | image_url: '2048x' }}');"{% endif %}></div>
               {%- endif -%}
             </noscript>
-            {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-            {%- assign img_url_mobile = block.settings.image_mobile | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            {%- assign img_url = block.settings.image | image_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            {%- assign img_url_mobile = block.settings.image_mobile | image_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
             <img class="image_desktop hero__image hero__image--{{ block.id }} fade-in{% unless forloop.first == true %} lazypreload{% endunless %}"
               {%- if forloop.first == true -%}
-                src="{{ block.settings.image_desktop | img_url: '300x' }}"
+                src="{{ block.settings.image_desktop | image_url: '300x' }}"
               {%- endif -%}
               data-src="{{ img_url }}"
               data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]"
@@ -124,7 +124,7 @@
               style="object-position: {{ block.settings.image_position }}">
             <img class="image_mobile hero__image hero__image--{{ block.id }} fade-in{% unless forloop.first == true %} lazypreload{% endunless %}"
               {%- if forloop.first == true -%}
-                src="{{ block.settings.image_mobile | img_url: '300x' }}"
+                src="{{ block.settings.image_mobile | image_url: '300x' }}"
               {%- endif -%}
               data-src="{{ img_url_mobile }}"
               data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]"
