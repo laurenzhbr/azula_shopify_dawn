@@ -95,6 +95,7 @@
       <span class="grid-product__price-wrap">
         <span class="grid-product__price">
           {% if on_sale %}
+            {% include 'product-price', variant: current_variant %}
             <span>{{ 'products.general.regular_price' | t }}</span>
             <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
           {% else %}
