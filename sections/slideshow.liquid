@@ -92,7 +92,6 @@
             }
           {%- endstyle -%}
         {%- endif -%}
-        <a href="{{ block.settings.button_link }}">
         <div class="hero__slide slide--{{ block.id }}{% if block.settings.image == blank %} slide--placeholder{% endif %}"
               data-hero-slide
               {{ block.shopify_attributes }}>
@@ -164,7 +163,6 @@
             </div>
           </div>
         </div>
-        </a>
       {%- endfor -%}
 
       {%- if section.blocks.size > 1 -%}
