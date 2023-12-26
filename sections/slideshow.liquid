@@ -108,7 +108,7 @@
             </noscript>
             {%- assign img_url = block.settings.image | image_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
             {%- assign img_url_mobile = block.settings.image_mobile | image_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-            <img class="image_desktop hero__image hero__image--{{ block.id }} layzload fade-in{% unless forloop.first == true %} lazypreload{% endunless %}"
+            <img class="image_desktop hero__image hero__image--{{ block.id }} loading="lazy" fade-in{% unless forloop.first == true %} lazypreload{% endunless %}"
               {%- if forloop.first == true -%}
                 src="{{ block.settings.image_desktop | image_url: '300x' }}"
               {%- endif -%}
@@ -120,7 +120,7 @@
               data-hero-image
               alt="{{ block.settings.image.alt | escape }}"
               style="object-position: {{ block.settings.image_position }}">
-            <img class="image_mobile hero__image hero__image--{{ block.id }} lazyload fade-in{% unless forloop.first == true %} lazypreload{% endunless %}"
+            <img class="image_mobile hero__image hero__image--{{ block.id }} loading="lazy" fade-in{% unless forloop.first == true %} lazypreload{% endunless %}"
               {%- if forloop.first == true -%}
                 src="{{ block.settings.image_mobile | image_url: '300x' }}"
               {%- endif -%}
@@ -130,8 +130,6 @@
               data-sizes="auto"
               data-parent-fit="cover"
               data-hero-image
-              height = 100%
-              width = 100%
               alt="{{ block.settings.image_mobile.alt | escape }}"
               style="object-position: {{ block.settings.image_position }}">
           {%- endif -%}
