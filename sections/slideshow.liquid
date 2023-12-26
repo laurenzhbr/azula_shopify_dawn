@@ -120,7 +120,8 @@
               data-parent-fit="cover"
               data-hero-image
               alt="{{ block.settings.image.alt | escape }}"
-              style="object-position: {{ block.settings.image_position }}">
+              style="object-position: {{ block.settings.image_position }}"></a>
+            <a href="{{ block.settings.button_link }}">
             <img class="image_mobile hero__image hero__image--{{ block.id }} lazyload fade-in{% unless forloop.first == true %} lazypreload{% endunless %}"
               {%- if forloop.first == true -%}
                 src="{{ block.settings.image_mobile | img_url: '300x' }}"
