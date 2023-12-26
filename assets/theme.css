@@ -2904,7 +2904,7 @@ button.mfp-arrow:active {
   font-size: 0.7857142857em;
   line-height: 0.7;
   position: absolute;
-  min-width: 50px;
+  min-width: 30px;
   border-radius: 25px;
   top: -8px;
   left: -8px;
