@@ -108,6 +108,7 @@
             </noscript>
             {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
             {%- assign img_url_mobile = block.settings.image_mobile | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            <a href="{{ block.settings.button_link }}">
             <img class="image_desktop hero__image hero__image--{{ block.id }} lazyload fade-in{% unless forloop.first == true %} lazypreload{% endunless %}"
               {%- if forloop.first == true -%}
                 src="{{ block.settings.image_desktop | img_url: '300x' }}"
@@ -131,7 +132,7 @@
               data-parent-fit="cover"
               data-hero-image
               alt="{{ block.settings.image_mobile.alt | escape }}"
-              style="object-position: {{ block.settings.image_position }}">
+              style="object-position: {{ block.settings.image_position }}"></a>
           {%- endif -%}
 
           <div class="hero__text-wrap{% if block.settings.image_overlay %} slideshow__overlay{% endif %}">
@@ -152,11 +153,13 @@
                     {{ block.settings.slide_subheading2 | escape }}
                   </p>
                 {%- endunless -%}
+                {% comment %}
                 {%- if block.settings.button_label != blank and block.settings.button_link != blank -%}
                   <a href="{{ block.settings.button_link }}" style="font-size: 17px; color: {{ block.settings.slide_button_label_color }}; background-color: {{ block.settings.slide_button_background_color }}" class="btn hero__cta">
                     {{ block.settings.button_label | escape }}
                   </a>
                 {%- endif -%}
+                {% endcomment %}
               </div>
             </div>
           </div>
