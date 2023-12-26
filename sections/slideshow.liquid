@@ -103,14 +103,14 @@
           {%- else -%}
             <noscript>
               {%- if forloop.first == true -%}
-                <div class="hero__image-no-js"{% if block.settings.image %} style="background-image: url('{{ block.settings.image | image_url: '2048x' }}');"{% endif %}></div>
+                <div class="hero__image-no-js"{% if block.settings.image %} style="background-image: url('{{ block.settings.image | img_url: '2048x' }}');"{% endif %}></div>
               {%- endif -%}
             </noscript>
-            {%- assign img_url = block.settings.image | image_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-            {%- assign img_url_mobile = block.settings.image_mobile | image_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            {%- assign img_url_mobile = block.settings.image_mobile | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
             <img class="image_desktop hero__image hero__image--{{ block.id }} lazyload fade-in{% unless forloop.first == true %} lazypreload{% endunless %}"
               {%- if forloop.first == true -%}
-                src="{{ block.settings.image_desktop | image_url: '300x' }}"
+                src="{{ block.settings.image_desktop | img_url: '300x' }}"
               {%- endif -%}
               data-src="{{ img_url }}"
               data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]"
@@ -122,7 +122,7 @@
               style="object-position: {{ block.settings.image_position }}">
             <img class="image_mobile hero__image hero__image--{{ block.id }} lazyload fade-in{% unless forloop.first == true %} lazypreload{% endunless %}"
               {%- if forloop.first == true -%}
-                src="{{ block.settings.image_mobile | image_url: '300x' }}"
+                src="{{ block.settings.image_mobile | img_url: '300x' }}"
               {%- endif -%}
               data-src="{{ img_url_mobile }}"
               data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]"
@@ -152,13 +152,11 @@
                     {{ block.settings.slide_subheading2 | escape }}
                   </p>
                 {%- endunless -%}
-                {% comment %}
                 {%- if block.settings.button_label != blank and block.settings.button_link != blank -%}
                   <a href="{{ block.settings.button_link }}" style="font-size: 17px; color: {{ block.settings.slide_button_label_color }}; background-color: {{ block.settings.slide_button_background_color }}" class="btn hero__cta">
                     {{ block.settings.button_label | escape }}
                   </a>
                 {%- endif -%}
-                {% endcomment %}
               </div>
             </div>
           </div>
@@ -209,7 +207,7 @@
               </p>
             {%- endunless -%}
             {%- if block.settings.button_label != blank and block.settings.button_link != blank -%}
-              <a href="{{ block.settings.button_link }}" style="font-size: 17px;" class="hero__cta btn">
+              <a href="{{ block.settings.button_link }}" style= "font-size: 17px;"class="hero__cta btn">
                 {{ block.settings.button_label | escape }}
               </a>
             {%- endif -%}
