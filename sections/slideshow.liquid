@@ -31,7 +31,7 @@
 
 <div id="HeroWrapper-{{ section.id }}"{% if section.settings.home_hero_height == 'adapt' %} class="hero--adapt"{% endif %} data-section-id="{{ section.id }}" data-section-type="slideshow-section">
   {%- if section.blocks.size > 0 -%}
-    {{ "" | link_to: collections.shop-page }}
+    <a href="https://www.azulastudios.com/collections/shop-page">
     <div class="hero-{{ section.id }} hero"
          id="Hero-{{ section.id }}"
          aria-label="slideshow"
