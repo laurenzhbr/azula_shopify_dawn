@@ -92,6 +92,7 @@
             }
           {%- endstyle -%}
         {%- endif -%}
+        <a href="{{ block.settings.button_link }}">
         <div class="hero__slide slide--{{ block.id }}{% if block.settings.image == blank %} slide--placeholder{% endif %}"
               data-hero-slide
               {{ block.shopify_attributes }}>
@@ -108,7 +109,6 @@
             </noscript>
             {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
             {%- assign img_url_mobile = block.settings.image_mobile | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-            <a href="{{ block.settings.button_link }}">
             <img class="image_desktop hero__image hero__image--{{ block.id }} lazyload fade-in{% unless forloop.first == true %} lazypreload{% endunless %}"
               {%- if forloop.first == true -%}
                 src="{{ block.settings.image_desktop | img_url: '300x' }}"
@@ -120,8 +120,7 @@
               data-parent-fit="cover"
               data-hero-image
               alt="{{ block.settings.image.alt | escape }}"
-              style="object-position: {{ block.settings.image_position }}"></a>
-            <a href="{{ block.settings.button_link }}">
+              style="object-position: {{ block.settings.image_position }}">
             <img class="image_mobile hero__image hero__image--{{ block.id }} lazyload fade-in{% unless forloop.first == true %} lazypreload{% endunless %}"
               {%- if forloop.first == true -%}
                 src="{{ block.settings.image_mobile | img_url: '300x' }}"
@@ -133,7 +132,7 @@
               data-parent-fit="cover"
               data-hero-image
               alt="{{ block.settings.image_mobile.alt | escape }}"
-              style="object-position: {{ block.settings.image_position }}"></a>
+              style="object-position: {{ block.settings.image_position }}">
           {%- endif -%}
 
           <div class="hero__text-wrap{% if block.settings.image_overlay %} slideshow__overlay{% endif %}">
@@ -165,6 +164,7 @@
             </div>
           </div>
         </div>
+        </a>
       {%- endfor -%}
 
       {%- if section.blocks.size > 1 -%}
