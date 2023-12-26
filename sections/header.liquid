@@ -316,7 +316,10 @@
             <div class="grid__item large--hide one-quarter">
               <div class="site-nav--mobile text-right">
                 <a href="{{ routes.cart_url }}" class="site-nav__link cart-link js-drawer-open-button-right" aria-controls="CartDrawer">
+                  {% comment %}
                   <span class="icon icon-cart" aria-hidden="true"></span>
+                  {% endcomment %}
+                  <img src="{{ "bag_icon2.svg" | asset_url }}" width=auto height=20px loading=lazy>
                   <span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}"></span>
                 </a>
               </div>
