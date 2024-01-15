@@ -70,8 +70,8 @@
           "1200d289-00bd-4711-8b7f-20922840909b": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/double_streetsign_small_black_frame_c8524379-ea5b-47c0-acd8-a71cbfdfca8c.jpg",
-              "image_mobile": "shopify:\/\/shop_images\/shop_welcome_mobile_c01a13f4-b233-4cf6-a22e-321ce5d3be6f.jpg",
+              "image": "shopify:\/\/shop_images\/double_streetsign_small_black_frame_start.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/shop_welcome_mobile_start.jpg",
               "image_position": "center center",
               "image_overlay": true,
               "image_overlay_opacity": 6,
