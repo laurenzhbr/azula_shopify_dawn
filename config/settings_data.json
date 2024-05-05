@@ -245,7 +245,7 @@
         "type": "password-content",
         "settings": {
           "title": "",
-          "newsletter_enable": false,
+          "newsletter_enable": true,
           "newsletter_form_heading": "",
           "newsletter_form_subheading": "<p><strong>We are back very soon...!<\/strong><\/p>",
           "newsletter_placeholder": "E-Mail-Adresse",
