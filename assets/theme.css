@@ -3758,20 +3758,10 @@ button.mfp-arrow:active {
 }
 @media screen and (min-width: 591px) {
   .password-page__wrapper {
-    background-image: url("password-aded-mobile.webp");
+    background-image: url("password-aded-desktop.webp");
   }
 }
-@media screen and (min-width: 769px) {
-  .password-page__hero {
-    font-size: 4.5714285714em;
-  }
-}
-/* Hintergrundbild für Mobile Geräte */
-@media only screen and (max-width: 768px) {
-  .password-page__wrapper {
-    background-image: url("password-aded-mobile.webp");
-  }
-}
+
 
 .password-page__wrapper h1, .password-page__wrapper .h1,
 .password-page__wrapper h2,
