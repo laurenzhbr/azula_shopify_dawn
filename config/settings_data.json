@@ -52,7 +52,7 @@
           "header_color": "#1f2021",
           "transparent_header_enable": true,
           "transparent_header_color": "#000000",
-          "search": "modal",
+          "search": "none",
           "main_menu_link_list": "main-menu",
           "drawer_bottom_link_list": "footer",
           "drawer_search_enable": true,
