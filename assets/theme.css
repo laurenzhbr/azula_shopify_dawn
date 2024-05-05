@@ -2775,6 +2775,7 @@ button.mfp-arrow:active {
   width: 100%;
   display: table;
   table-layout: fixed;
+  max-height: 330px;
 }
 
 .grid-product__image-link {
