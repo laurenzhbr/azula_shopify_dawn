@@ -3750,11 +3750,18 @@ button.mfp-arrow:active {
   display: table;
   height: 100%;
   width: 100%;
-  background-image: url("DSC08811.webp");
+  background-image: url("password-aded-desktop.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: #ffffff;
+}
+
+/* Hintergrundbild für Mobile Geräte */
+@media only screen and (max-width: 768px) {
+  .password-page__wrapper {
+    background-image: url("password-aded-mobile.webp");
+  }
 }
 
 .password-page__wrapper h1, .password-page__wrapper .h1,
