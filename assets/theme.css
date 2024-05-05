@@ -3750,13 +3750,22 @@ button.mfp-arrow:active {
   display: table;
   height: 100%;
   width: 100%;
-  background-image: url("password-aded-desktop.webp");
+  background-image: url("password-aded-mobile.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: #ffffff;
 }
-
+@media screen and (min-width: 591px) {
+  .password-page__wrapper {
+    background-image: url("password-aded-mobile.webp");
+  }
+}
+@media screen and (min-width: 769px) {
+  .password-page__hero {
+    font-size: 4.5714285714em;
+  }
+}
 /* Hintergrundbild für Mobile Geräte */
 @media only screen and (max-width: 768px) {
   .password-page__wrapper {
