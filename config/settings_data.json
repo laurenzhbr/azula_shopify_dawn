@@ -70,7 +70,7 @@
           "1200d289-00bd-4711-8b7f-20922840909b": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/shop_welcome_desktop.jpg",
+              "image": "shopify:\/\/shop_images\/desktop_cover.jpg",
               "image_mobile": "shopify:\/\/shop_images\/DSC08447-5.jpg",
               "image_position": "center center",
               "image_overlay": true,
