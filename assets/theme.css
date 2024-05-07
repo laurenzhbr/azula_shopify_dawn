@@ -1790,7 +1790,7 @@ a:hover {
 }
 .hero .slick-list,
 .hero .slick-track {
-  height: 100%;
+  height: 1080px;
 }
 @media screen and (max-width: 1050px) {
   .hero .slick-list,
