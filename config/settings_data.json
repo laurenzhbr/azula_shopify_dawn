@@ -210,8 +210,8 @@
       "product-recommendations": {
         "type": "product-recommendations",
         "settings": {
-          "show_product_recommendations": false,
-          "heading": "Das könnte dir auch gefallen"
+          "show_product_recommendations": true,
+          "heading": "Das könnte Dir auch gefallen!"
         }
       },
       "collection-template": {
