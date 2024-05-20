@@ -58,8 +58,8 @@
           "drawer_search_enable": true,
           "show_announcement": true,
           "home_page_only": false,
-          "text": "- 10% OFF AUF ALLE PRE-ORDER -",
-          "link": "",
+          "text": "- Shop now our new \"ALL DAY EVERY DAY\" tracksuits -",
+          "link": "shopify:\/\/collections\/vol-three",
           "color_bg": "#254fa2",
           "color_text": "#ffffff"
         }
