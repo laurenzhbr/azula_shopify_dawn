@@ -48,16 +48,16 @@
                         More image size options at:
                           - http://docs.shopify.com/themes/filters/product-img-url
                       {% endcomment %}
-                      <img src="{{ item | img_url: 'medium' }}" alt="{{ item.title | escape }}">
+                      <img src="{{ item | img_url: 'medium' }}" alt="{{ item.title | escape }}" data-mczr="{% if item.properties._mczr_designId %}item_image-{{ item.properties._mczr_designId }}{% else %}item_image-not-mczr{% endif %}">
                     </a>
                   </div>
 
                   <div class="grid__item two-thirds">
-                    <a href="{{ item.url }}" class="h4 cart__product-name">
+                    <a href="{{ item.url }}" class="h4 cart__product-name" data-mczr="{% if item.properties._mczr_designId %}item_product_title-{{ item.properties._mczr_designId }}{% else %}item_product_title-not-mczr{% endif %}">
                       {{ item.product.title }}
                     </a>
                     {% unless item.product.has_only_default_variant %}
-                      <p class="cart__product-meta">
+                      <p class="cart__product-meta" data-mczr="{% if item.properties._mczr_designId %}item_variant_title-{{ item.properties._mczr_designId }}{% else %}item_variant_title-not-mczr{% endif %}">
                         {{ item.variant.title }}
                       </p>
                     {% endunless %}
@@ -74,7 +74,7 @@
                     {% if property_size > 0 %}
                       {% for p in item.properties %}
                         {% assign first_character_in_key = p.first | truncate: 1, '' %}
-                        {% unless p.last == blank or first_character_in_key == '_' %}
+                        {% unless p.last == blank or p.first contains '_mczr' or first_character_in_key == '_' %}
                           {{ p.first }}:
 
                           {% if p.last contains '/uploads/' %}
@@ -112,11 +112,11 @@
 
                     {%- if item.original_line_price != item.final_line_price -%}
                       <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
-                      <del class="cart__price">{{ item.original_line_price | money }}</del>
+                      <del class="cart__price" data-mczr="{% if item.properties._mczr_designId %}item_original_line_price-{{ item.properties._mczr_designId }}{% else %}item_original_line_price-not-mczr{% endif %}">{{ item.original_line_price | money }}</del>
                       <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
-                      <span class="order-discount cart__price">{{ item.final_line_price | money }}</span>
+                      <span class="order-discount cart__price" data-mczr="{% if item.properties._mczr_designId %}item_final_line_price-{{ item.properties._mczr_designId }}{% else %}item_final_line_price-not-mczr{% endif %}">{{ item.final_line_price | money }}</span>
                     {%- else -%}
-                      <span class="cart__price">{{ item.original_line_price | money }}</span>
+                      <span class="cart__price" data-mczr="{% if item.properties._mczr_designId %}item_original_line_price-{{ item.properties._mczr_designId }}{% else %}item_original_line_price-not-mczr{% endif %}">{{ item.original_line_price | money }}</span>
                     {%- endif -%}
 
                     {%- if item.unit_price_measurement -%}
@@ -188,7 +188,7 @@
                   <p class="cart__subtotal">{{ 'cart.general.subtotal' | t }}</p>
                 </div>
                 <div class="grid__item one-half large--one-third">
-                  <p class="cart__subtotal">{{ cart.total_price | money_with_currency }}</p>
+                  <p class="cart__subtotal" data-mczr="cart_total_price">{{ cart.total_price | money_with_currency }}</p>
                 </div>
               </div>
 
@@ -235,3 +235,5 @@
     {% endif %}
   </div>
 </div>
+
+{% render "cart-script.mczr" %}
